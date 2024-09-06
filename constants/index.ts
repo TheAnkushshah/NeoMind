@@ -17,29 +17,29 @@ import {
   
   export const TESTIMONIALS = [
     {
-      name: "Carlos",
-      image: "/testimonials/user-1.jpeg",
+      name: "Himesh",
+      image: "/testimonials/user-1.png",
       title: "Marketing Specialist",
       description:
         "This application has significantly boosted our marketing efforts.",
     },
     {
-      name: "Emily",
-      image: "/testimonials/user-2.jpeg",
+      name: "Arun",
+      image: "/testimonials/user-2.png",
       title: "Student",
       description:
         "As a student, this app has been a lifesaver for organizing my tasks and schedules.",
     },
     {
-      name: "David",
-      image: "/testimonials/user-3.jpeg",
+      name: "Madhav",
+      image: "/testimonials/user-3.png",
       title: "Entrepreneur",
       description:
         "The efficiency and reliability of this tool are unparalleled. Highly recommended!",
     },
     {
-      name: "Sophia",
-      image: "/testimonials/user-4.jpeg",
+      name: "Rootvik",
+      image: "/testimonials/user-4.png",
       title: "Graphic Designer",
       description: "Incredible features and user-friendly design. Love it!",
     },

@@ -12,7 +12,12 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = siteConfig;
+export const metadata: Metadata = {
+  ...siteConfig,
+  icons: {
+    icon: "/dunk.png", // Add the path to your favicon here
+  },
+};
 
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
@@ -27,6 +32,9 @@ export default function RootLayout({ children }: PropsWithChildren) {
       }}
     >
       <html lang="en">
+        <head>
+          <link rel="icon" href="/dunk.png" type="image/png" /> {/* Favicon reference */}
+        </head>
         <CrispProvider />
         <body className={inter.className}>
           <ModalProvider />
