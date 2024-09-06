@@ -2,6 +2,8 @@
 
 # NeoMind - A Modern SaaS AI Platform
 
+![image](public/Preview.png)
+
 ## Getting Started
 
 1. Make sure **Git** and **NodeJS** is installed.
@@ -109,16 +111,32 @@ NEXT_PUBLIC_CRISP_WEBSITE_ID=xxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx
 
 **NOTE:** Please make sure to keep your API keys and configuration values secure and do not expose them publicly.
 
-## Screenshots
+## More Screenshots
 
-![Modern UI/UX](/.github/images/img1.png "Modern UI/UX")
+![image](public/Dash.png)
 
-![Conversation Page](/.github/images/img2.png "Conversation Page")
+![image](public/Chat.png)
 
-![Image Generation](/.github/images/img3.png "Image Generation")
+![image](public/Music.png)
 
-![Code Generation](/.github/images/img4.png "Code Generation")
+![image](public/Image.png)
 
-## Contribute
+![image](public/Video.png)
+
+![image](public/Code.png)
+
+![image](public/Settings.png)
+
+![image](public/Pro.png)
+
+![image](public/Pay.png)
+
+## Feedback
 
 You might encounter some bugs while using this app. You are more than welcome to contribute. Just submit changes via pull request and I will review them before merging. Make sure you follow community guidelines.
+
+## Developer & Main
+
+- Ankush Shah (ankushsahvlogs@gmail.com) (Main)
+
+Happy coding! 🚀
