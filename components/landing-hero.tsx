@@ -30,7 +30,7 @@ export const LandingHero = () => {
       </div>
 
       <div className="text-sm md:text-xl font-light text-zinc-400">
-        Create content using AI 10x faster.
+        Create content using AI 10x faster
       </div>
 
       <div className="">
@@ -46,7 +46,7 @@ export const LandingHero = () => {
       </div>
 
       <div className="text-zinc-400 text-xs md:text-sm font-normal">
-        No credit card required.
+        No credit card required
       </div>
     </div>
   );
