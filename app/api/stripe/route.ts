@@ -47,7 +47,7 @@ export async function GET() {
               name: "NeoMind Pro",
               description: "Unlimited AI Generations.",
             },
-            unit_amount: 2000, // $20
+            unit_amount: 200, // $2
             recurring: {
               interval: "month",
             },
