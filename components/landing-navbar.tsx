@@ -34,16 +34,6 @@ export const LandingNavbar = () => {
         <Button variant="outline" className="rounded-full" asChild>
           <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>Get Started</Link>
         </Button>
-
-        <Button className="rounded-full" asChild>
-          <Link
-            href={links.sourceCode}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <Github className="h-5 w-5" />
-          </Link>
-        </Button>
       </div>
     </nav>
   );
