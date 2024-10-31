@@ -55,7 +55,7 @@ const VideoPage = () => {
     <div>
       <Heading
         title="Video Generation"
-        description="Let your inner child make a scenario and we'll turn it into a real video 🎃"
+        description="Let your inner child make a scenario and we'll turn it into a real video 🏀"
         icon={VideoIcon}
         iconColor="text-orange-700"
         bgColor="bg-orange-700/10"
@@ -108,7 +108,7 @@ const VideoPage = () => {
 
           {video && (
             <video
-              className="w-full aspect-video mt-8 rounded-lg border bg-black"
+              className="aspect-video mt-8 rounded-lg border bg-black"
               controls
             >
               <source src={video} />

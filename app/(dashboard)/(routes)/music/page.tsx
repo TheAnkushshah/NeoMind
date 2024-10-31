@@ -55,7 +55,7 @@ const MusicPage = () => {
     <div>
       <Heading
         title="Music Generation"
-        description="Transform your humming into beautiful, music in just one click  🌿"
+        description="Transform your humming into beautiful, music in just one click  🎧"
         icon={Music}
         iconColor="text-emerald-500"
         bgColor="bg-emerald-500/10"

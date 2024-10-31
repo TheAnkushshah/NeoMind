@@ -106,7 +106,7 @@ const ImagePage = () => {
     <div>
       <Heading
         title="Image Generation"
-        description="Turn your imagination into stunning visuals with a single prompt 💖"
+        description="Turn your imagination into stunning visuals with a single prompt 🎉"
         icon={ImageIcon}
         iconColor="text-pink-700"
         bgColor="bg-pink-700/10"
