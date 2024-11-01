@@ -61,7 +61,7 @@ const VideoPage = () => {
         bgColor="bg-orange-700/10"
       />
 
-      <div className="px-4 lg:px-8">
+      <div className="px-4 lg:px-8 py-4 pt-0">
         <div className="">
           <Form {...form}>
             <form

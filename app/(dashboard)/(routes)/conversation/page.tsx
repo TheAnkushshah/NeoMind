@@ -74,7 +74,7 @@ const ConversationPage = () => {
         bgColor="bg-violet-500/10"
       />
 
-      <div className="px-4 lg:px-8">
+      <div className="px-4 lg:px-8 py-4 pt-0">
         <div className="">
           <Form {...form}>
             <form
@@ -125,7 +125,7 @@ const ConversationPage = () => {
               <div
                 key={`${i}-${message.content}`}
                 className={cn(
-                  "p-8 w-full flex gap-x-8 max-md:items-start items-center rounded-lg",
+                  "p-8 w-full flex gap-x-8 max-md:items-center items-center rounded-lg",
                   message.role === "user"
                     ? "bg-white border border-black/10"
                     : "bg-muted",
