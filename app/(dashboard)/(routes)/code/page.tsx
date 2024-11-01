@@ -79,7 +79,7 @@ const CodePage = () => {
         bgColor="bg-yellow-500/10"
       />
 
-      <div className="px-4 lg:px-8">
+      <div className="px-4 lg:px-8 py-4 pt-0">
         <div>
           <Form {...form}>
             <form
@@ -130,7 +130,7 @@ const CodePage = () => {
               <div
                 key={message.content}
                 className={cn(
-                  "p-8 w-full flex items-start gap-x-8 rounded-lg",
+                  "p-8 max-md:flex-col w-full flex max-md:items-start items-center gap-x-8 gap-y-4 rounded-lg overflow-auto",
                   message.role === "user"
                     ? "bg-white border border-black/10"
                     : "bg-muted",
