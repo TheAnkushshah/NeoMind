@@ -30,7 +30,7 @@ const DashboardPage = () => {
           >
             <div className="flex items-center gap-x-4">
               <div className={cn("p-2 w-fit rounded-md", tool.bgColor)}>
-                <tool.icon className={cn("w-8 h-8", tool.color)} />
+                <tool.icon className={cn("w-10 h-10", tool.color)} />
               </div>
 
               <div className="font-semibold">{tool.label}</div>
