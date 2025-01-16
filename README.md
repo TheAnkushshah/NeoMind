@@ -22,7 +22,7 @@ Powerful SaaS AI platform offering chatbot services, image generation, code crea
 - Crisp
 - Clerk
 - Aiven - MySQL
-- OpenAI API
+- OpenAI
 - Replicate
 - Aiven
 - HTML5
