@@ -1,142 +1,257 @@
-<a name="readme-top"></a>
+### NeoMind
 
-# NeoMind - A Modern SaaS AI Platform
+Powerful SaaS AI platform offering chatbot services, image generation, code creation, video production, and music composition. Tailored for diverse use cases, it simplifies content creation and boosts efficiency. Ideal for businesses and creators seeking AI-driven innovation.
+
+### Preview
 
 ![image](public/Preview.png)
 
-## Getting Started
+### <a name="table">Table of Contents</a>
 
-1. Make sure **Git** and **NodeJS** is installed.
-2. Clone this repository to your local computer.
-3. Create `.env` file in **root** directory.
-4. Contents of `.env`:
+1. [Tech Stack](#tech-stack)
+2. [Features](#features)
+3. [Getting Started](#getting-started)
+4. [Feedback](#feedback)
+5. [Contributors](#contributors)
 
-```env
-# .env
+### <a name="tech-stack">Tech Stack</a>
 
-# disable next.js telemetry
-NEXT_TELEMETRY_DISABLED=1
+- Next.js
+- Prisma
+- Stripe
+- Crisp
+- Clerk
+- Aiven - MySQL
+- OpenAI API
+- Replicate
+- Aiven
+- HTML5
+- CSS3
+- React.js
+- shadcn
+- Tailwind CSS
 
-# clerk auth keys
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-CLERK_SECRET_KEY=sk_test_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+### <a name="features">Features</a>
 
-# clerk redirect uri
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
+- **Limited Free Generations:** Users can generate up to 5 free outputs (text, images, code, videos, or music) before needing to upgrade for unlimited access.
 
-# openai api key
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- **Customer Support:** Dedicated 24/7 customer support to assist with queries, technical issues, and platform guidance.
 
-# replicate api token
-REPLICATE_API_TOKEN=r8_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- **Multi-Content Generation:** Offers seamless generation of chatbots, images, code, videos, and music, all from a single platform.
 
-# aiven database url
-DATABASE_URL="mysql://<username>:<password>@<host>:<port>/genius-ai?ssl-mode=REQUIRED"
+- **User Authentication:** Secure sign-in and sign-up options with email/password or social logins to ensure user data safety and accessibility.
 
-# stripe api/webhook secret key
-STRIPE_API_SECRET_KEY=sk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-STRIPE_WEBHOOK_SECRET=whsec_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- **Subscription Plans:** Flexible subscription options tailored to individual needs, offering cost-effective solutions for unlimited content generation.
 
-# app base url
-NEXT_PUBLIC_APP_URL=http://localhost:3000
+- **Analytics Dashboard:** A detailed dashboard to track usage, monitor generation limits, and analyze generated content trends.
 
-# crisp website id
-NEXT_PUBLIC_CRISP_WEBSITE_ID=xxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx
-```
+- **Collaboration Tools:** Allow teams to collaborate on content generation projects in real-time with shared workspaces.
 
-### 5. Clerk Authentication Keys
+- **Security Features:** Protect account with encryption and two-factor authentication for added security.
 
-- Visit the Clerk dashboard: [https://clerk.dev](https://clerk.dev)
-- Log in to your Clerk account or sign up if you don't have one.
-- Go to the "Projects" section and select your project.
-- Navigate to the "API Keys" tab.
-- Copy the "Publishable Key" and replace `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` in the `.env.local` file with the copied key.
-- Copy the "Secret Key" and replace `CLERK_SECRET_KEY` in the `.env.local` file with the copied key.
+- **Responsive Design:** Follows responsive design principles to ensure optimal user experience across devices, adapting seamlessly to different screen sizes and resolutions.
 
-### 6. OpenAI API Key
+### <a name="getting-started">Getting Started</a>
 
-Visit [OpenAI](https://platform.openai.com/signup/) and sign up for an account. Once registered, you can find your API key in the API section of your account settings. Copy the key and set it as the `OPENAI_API_KEY` in your project's environment.
+### Prerequisites
 
-```env
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-```
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
 
-### 7. Replicate API Token
+### Cloning
 
-Sign up or log in to [Replicate](https://replicate.ai/). Once logged in, navigate to your account settings, and you'll find your API token. Copy the token and set it as the `REPLICATE_API_TOKEN` in your project's environment.
+1. **Cloning:** 
 
-```env
-REPLICATE_API_TOKEN=r8_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-```
+    Run the following command in your terminal or command prompt to clone the repository to your local machine:
 
-### 8. Aiven Database URL
+    ```bash
+    git clone https://github.com/theankushshah/neomind.git
+    ```
 
-If you don't have an Aiven account, sign up [here](https://aiven.io/). After creating an account, set up a MySQL database. In the Aiven dashboard, find your database connection details and construct the `DATABASE_URL` in the following format:
+2. **Navigate to the Directory:** 
+    
+    Once cloned, navigate into the project directory using the `cd` command:
 
-```env
-DATABASE_URL="mysql://<username>:<password>@<host>:<port>/genius-ai?ssl-mode=REQUIRED"
-```
+    ```bash
+    cd neomind
+    ```
 
-### 9. Stripe API and Webhook Keys
+### Download
 
-For Stripe, sign up or log in to your [Stripe Dashboard](https://dashboard.stripe.com/register). Once logged in, go to Developers > API keys to find your API secret key and webhook secret. Set them as `STRIPE_API_SECRET_KEY` and `STRIPE_WEBHOOK_SECRET` in your project's environment.
+1. **Download ZIP Code folder:** 
 
-```env
-STRIPE_API_SECRET_KEY=sk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-STRIPE_WEBHOOK_SECRET=whsec_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-```
+    Unzip the folder in your machine.
 
-### 10. App Base URL
+2. **Navigate to the Downloaded Directory:** 
 
-Set the base URL of your application as `NEXT_PUBLIC_APP_URL` in your project's environment.
+    Open your code editor and open the unzipped folder in it then:
 
-```env
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-```
+    ```bash
+    cd /path/to/downloaded/folder
+    ```
 
-### 11. Crisp Website ID
+### Cloning & Download
 
-Sign up on [Crisp](https://crisp.chat/en/) and create a website. Once created, find your website ID in the Crisp dashboard and set it as `NEXT_PUBLIC_CRISP_WEBSITE_ID` in your project's environment.
+1. **Dependencies Installation:**
 
-```env
-NEXT_PUBLIC_CRISP_WEBSITE_ID=xxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx
-```
+    ```bash
+    npm install
+    ```
 
-12. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
+2. **Environment Variables & Database Setup:** 
 
-13. Now app is fully configured 👍 and you can start using this app using either one of `npm run dev` or `yarn dev`.
+    Create a new file named `.env` in the root of your project and add the following content:
 
-**NOTE:** Please make sure to keep your API keys and configuration values secure and do not expose them publicly.
+    ```env
+    NEXT_TELEMETRY_DISABLED=1
 
-## More Screenshots
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+    CLERK_SECRET_KEY=
 
-![image](public/Dash.png)
+    NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+    NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+    NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
+    NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
 
-![image](public/Chat.png)
+    OPENAI_API_KEY=
 
-![image](public/Music.png)
+    REPLICATE_API_TOKEN=
 
-![image](public/Image.png)
+    DATABASE_URL=
 
-![image](public/Video.png)
+    STRIPE_API_SECRET_KEY=
+    STRIPE_WEBHOOK_SECRET=
 
-![image](public/Code.png)
+    NEXT_PUBLIC_CRISP_WEBSITE_ID=
+    ```
 
-![image](public/Settings.png)
+    Replace the placeholder values with your actual Clerk, OpenAI, Replicate, Stripe, Crisp & Database credentials. You can obtain these credentials by signing up on the [Clerk website](https://clerk.com), [OpenAI website](https://platform.openai.com), [Replicate website](https://replicate.com), [Aiven website](https://aiven.io), [Stripe website](https://stripe.com) and [Crisp website](https://crisp.chat)
 
-![image](public/Pro.png)
+3. **Database Run:**
 
-![image](public/Pay.png)
+    Run the following command to run the database:
 
-## Feedback
+    ```bash
+    npx prisma generate
+    npx prisma db push
+    npx prisma studio
+    ```
+
+    Open the ORM in your browser to view the database.
+
+4. **Running:**
+
+    ```bash
+    npm run dev
+    ```
+
+    Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+
+5. **Start Coding:** 
+
+    Feel free to edit the code according to your requirements. 
+
+6. **Testing**
+
+    ```bash
+    npm test
+    ```
+
+7. **Build for Production**
+
+    ```bash
+    npm run build
+    ```
+
+### Github
+
+1. **Initialize a New Git Repository:**
+
+    ```bash
+    git init
+    ```
+
+2. **Stage and Commit the Code:**
+
+    ```bash
+    git add .
+    git commit -m "Initial commit"
+    ```
+
+3. **Create a New Repository on GitHub:**
+
+    Do not initialize the new repository with a README, .gitignore, or license.
+
+4. **Link Local Repository to GitHub:**
+
+    ```bash
+    git remote add origin https://github.com/username/new-repo.git
+    ```
+
+    Replace https://github.com/username/new-repo.git with your actual repository URL.
+
+5. **Push Code to GitHub:**
+
+    ```bash
+    git branch -m main
+    git pull origin main
+    git push -u origin main
+    ```
+
+6. **Deployment:** 
+    
+    Deploy the application to your preferred hosting platform to make it accessible online.
+
+### Forking
+
+1. **Forking:** 
+
+    Run the following command in your terminal or command prompt to fork the repository to your local machine:
+
+    ```bash
+    git clone https://github.com/your-username/neomind.git
+    ```
+
+2. **Navigate to the Directory:** 
+
+    Once cloned, navigate into the project directory using the `cd` command:
+
+    ```bash
+    cd neomind
+    ```
+
+3. **Start Coding:** 
+
+    Make the additions & desired changes to the code.
+
+4. **Commit & Push Your Changes to Your Fork:** 
+
+    Once cloned, navigate into the project directory using the `cd` command:
+
+    ```bash
+    git add .
+    git commit -m ""
+    git pull origin main
+    git push -u origin main
+    ```
+
+5. **Create a Pull Request:**
+
+- Go to your forked repository on GitHub
+- Click the "Compare & pull request" button.
+- Review your changes and write a clear description of your contribution.
+- Click "Create pull request"
+
+    **I will review your pull request and decide whether to merge your changes into my repository or not**
+
+### <a name="feedback">Feedback</a>
 
 You might encounter some bugs while using this app. You are more than welcome to contribute. Just submit changes via pull request and I will review them before merging. Make sure you follow community guidelines.
 
-## Developer & Main
+### <a name="contributors">Contributors & Main</a>
 
-- Ankush Shah (ankushsahvlogs@gmail.com) (Main)
+- Ankush Shah (ankushsahvlogs@gmail.com)
+- Haven Futures (support@havenfutures.com) (Main)
 
-Happy coding! 🚀
+Happy coding!
