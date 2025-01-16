@@ -28,7 +28,9 @@ Powerful SaaS AI platform offering chatbot services, image generation, code crea
 - HTML5
 - CSS3
 - React.js
-- shadcn
+- Node.js
+- NPM
+- NPX
 - Tailwind CSS
 
 ### <a name="features">Features</a>
