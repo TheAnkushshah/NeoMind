@@ -31,7 +31,7 @@ import {
         "As a student, this app has been a lifesaver for organizing my tasks and schedules.",
     },
     {
-      name: "Madhav",
+      name: "Ankush",
       image: "/testimonials/user-3.png",
       title: "Entrepreneur",
       description:
