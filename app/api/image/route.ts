@@ -1,12 +1,13 @@
 import { auth } from "@clerk/nextjs/server";
 import { type NextRequest, NextResponse } from "next/server";
-import Replicate from "replicate";
+import { OpenAI } from "openai";  // Adjusted import
 
 import { increaseApiLimit, checkApiLimit } from "@/lib/api-limit";
 import { checkSubscription } from "@/lib/subscription";
 
-const replicate = new Replicate({
-  auth: process.env.REPLICATE_API_TOKEN!,
+// Initialize OpenAI directly
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY!,
 });
 
 export async function POST(req: NextRequest) {
@@ -17,8 +18,8 @@ export async function POST(req: NextRequest) {
     const { prompt, amount = "1", resolution = "512x512" } = body;
 
     if (!userId) return new NextResponse("Unauthorized.", { status: 401 });
-    if (!process.env.REPLICATE_API_TOKEN)
-      return new NextResponse("Replicate API key not configured.", {
+    if (!process.env.OPENAI_API_KEY)
+      return new NextResponse("OpenAI API key not configured.", {
         status: 500,
       });
 
@@ -37,20 +38,15 @@ export async function POST(req: NextRequest) {
     if (!freeTrial && !isPro)
       return new NextResponse("Free trial has expired.", { status: 403 });
 
-    const response = await replicate.run(
-      "recraft-ai/recraft-v3",
-      {
-        input: {
-          prompt,
-          n: parseInt(amount, 10),
-          size: resolution,
-        },
-      },
-    );
+    const response = await openai.images.generate({
+      prompt: prompt,
+      n: parseInt(amount, 10),
+      size: resolution,
+    });
 
     if (!isPro) await increaseApiLimit();
 
-    return NextResponse.json(response, { status: 200 });
+    return NextResponse.json(response.data, { status: 200 });
   } catch (error: unknown) {
     console.error("[IMAGE_ERROR]: ", error);
     return new NextResponse("Internal server error.", { status: 500 });
