@@ -30,7 +30,7 @@ export const LandingHero = () => {
       </div>
 
       <div className="text-sm md:text-xl font-light text-zinc-400">
-      Built with ❤️ by Haven Futures
+      Built with 💚 by Haven Futures
       </div>
 
       <div className="">
