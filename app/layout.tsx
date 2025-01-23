@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   ...siteConfig,
   icons: {
-    icon: "/dunk.png", // Add the path to your favicon here
+    icon: "/logo.png", // Add the path to your favicon here
   },
 };
 
